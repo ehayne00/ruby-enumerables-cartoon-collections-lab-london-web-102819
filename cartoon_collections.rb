@@ -18,5 +18,5 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
  cheese_types.map{|c| array.include?(c)}.include?(true)
- puts (cheese_types - array).size < cheese_types.size
+ 
 end
