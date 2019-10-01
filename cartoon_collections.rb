@@ -17,6 +17,6 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
- array.reduce{|i| i === cheese_types}
- return cheesetypes[i]
+ cheese_types.map{|c| array.include?(c)}.include?(true)
+ puts (cheese_types - array)
 end
